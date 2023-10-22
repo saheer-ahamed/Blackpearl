@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FCF2D5;
+    padding: 0 0 0 0;
+}
+
+.container {
+    height: 80vh;
+}
+
+.container,
+footer {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.container .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .content img {
+    width: 100%;
+    margin-bottom: 2rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.container .content .title {
+    color: #000;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-align: center;
+}
+
+footer {
+    height: 20vh;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer .footer_data {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+footer img {
+    width: 15rem;
+}
+
+footer p {
+    word-wrap: normal;
+    align-self: flex-start;
+    font-size: 1rem;
+
+}
+
+@media screen and (max-height: 750px) {
+    footer img {
+        width: 12rem;
+    }
+
+    footer p {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .container .content .title {
+        font-size: 2rem;
+    }
+
+    footer img {
+        width: 13rem;
+    }
+
+    footer p {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .container .content img {
+        width: 70%;
+    }
+
+    .container .content .title {
+        font-size: 2rem;
+    }
+
+    footer img {
+        width: 12rem;
+    }
+
+    footer p {
+        font-size: .5rem;
+    }
+}
