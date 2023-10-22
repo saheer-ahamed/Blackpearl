@@ -76,6 +76,12 @@ footer p {
 
 }
 
+@media screen and (min-width: 992px) {
+    body {
+        overflow: hidden;
+    }
+}
+
 @media screen and (max-height: 750px) {
     footer img {
         width: 12rem;
